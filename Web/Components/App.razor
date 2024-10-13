@@ -1,19 +1,18 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
-    <link rel="stylesheet" href="@Assets["app.css"]" />
-    <link rel="stylesheet" href="@Assets["Web.styles.css"]" />
-    <ImportMap />
-    <HeadOutlet @rendermode="InteractiveServer" />
-</head>
+    
+    <!-- Use direct paths to stylesheets located in the wwwroot folder -->
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/Web.styles.css" />
 
+    <HeadOutlet />
+</head>
 <body>
-    <Routes @rendermode="InteractiveServer" />
+    <Routes />
     <script src="_framework/blazor.web.js"></script>
 </body>
-
 </html>
